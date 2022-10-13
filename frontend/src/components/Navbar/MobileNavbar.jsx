@@ -2,7 +2,7 @@ import styles from "../../styles/Navbar/MobileNavbar.module.scss";
 import { FaTimes, FaBars } from "react-icons/fa";
 
 import ListItemLink from "./ListItemLink";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const MobileNavbar = () => {
     const [navOpen, setNavOpen] = useState(false);

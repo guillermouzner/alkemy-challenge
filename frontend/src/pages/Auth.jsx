@@ -1,6 +1,6 @@
 import styles from "../styles/authComponents/Auth.module.scss";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MainContainer from "../components/Containers/MainContainer";
 import { Title } from "../components/Titles/Titles";
 
