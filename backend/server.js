@@ -5,6 +5,9 @@ import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
 
+//Routes
+import authRouter from "./routes/authRoutes.js";
+
 //Prisma Client
 import prisma from "./constats/config.js";
 
@@ -48,6 +51,9 @@ app.use(
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+//Routes
+app.use("/api/v1/auth", authRouter);
 
 app.listen(port, () => {
     console.log(`SERVER STARTED: http://localhost:${port}`);
